@@ -15,7 +15,8 @@ export async function getStaticPaths() {
   return {
     paths: [
       {
-        params: { id: "foo" },
+        params: { id: "foo", locale: "en" },
+        params: { id: "foo", locale: "de" },
       },
     ],
     fallback: "blocking",
