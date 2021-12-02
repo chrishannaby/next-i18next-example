@@ -1,4 +1,4 @@
-const i18nextHttpBackend = require("i18next-http-backend").default;
+const i18nextHttpBackend = require("i18next-http-backend/cjs");
 
 module.exports = {
   i18n: {
@@ -10,6 +10,5 @@ module.exports = {
   react: {
     useSuspense: false,
   },
-  serializeConfig: false,
   use: typeof window !== "undefined" ? [i18nextHttpBackend] : [],
 };
