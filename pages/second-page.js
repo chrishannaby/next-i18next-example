@@ -7,7 +7,7 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 
 const SecondPage = () => {
-  const { t } = useTranslation("second-page");
+  const { t } = useTranslation("client");
 
   return (
     <>
@@ -25,7 +25,7 @@ const SecondPage = () => {
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["second-page", "footer"])),
+    ...(await serverSideTranslations(locale, ["footer"])),
   },
 });
 
