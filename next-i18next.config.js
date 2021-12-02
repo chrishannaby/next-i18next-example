@@ -1,4 +1,4 @@
-const i18nextHttpBackend = require("i18next-http-backend/cjs");
+const i18nextHttpBackend = require("i18next-http-backend").default;
 
 module.exports = {
   i18n: {
