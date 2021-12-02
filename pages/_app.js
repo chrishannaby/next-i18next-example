@@ -1,6 +1,5 @@
-import { appWithTranslation } from "next-i18next";
-import nextI18nConfig from "../next-i18next.config";
+import { appWithTranslation } from 'next-i18next'
 
-const MyApp = ({ Component, pageProps }) => <Component {...pageProps} />;
+const MyApp = ({ Component, pageProps }) => <Component {...pageProps} />
 
-export default appWithTranslation(MyApp, nextI18nConfig);
+export default appWithTranslation(MyApp)

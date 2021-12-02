@@ -6,6 +6,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+import { ClientTranslations } from "../components/ClientTranslations";
 
 const Homepage = () => {
   const router = useRouter();
@@ -16,6 +17,7 @@ const Homepage = () => {
       <main>
         <Header heading={t("h1")} title={t("title")} />
         <p>This page uses getServerSideProps</p>
+        <ClientTranslations />
         <div>
           <Link href="/" locale={router.locale === "en" ? "de" : "en"}>
             <button>{t("change-locale")}</button>
