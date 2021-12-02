@@ -11,5 +11,5 @@ module.exports = {
     useSuspense: false,
   },
   serializeConfig: false,
-  use: process.browser ? [i18nextHttpBackend] : [],
+  use: typeof window !== "undefined" ? [i18nextHttpBackend] : [],
 };
