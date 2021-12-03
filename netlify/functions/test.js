@@ -15,9 +15,9 @@ exports.handler = async () => {
       body: "hello",
     };
   } catch (e) {
+    console.log(e);
     return {
       statusCode: 500,
-      body: e,
     };
   }
 };
