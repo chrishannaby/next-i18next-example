@@ -1,5 +1,6 @@
 // use cjs instead of default export
 const i18nextHttpBackend = require("i18next-http-backend/cjs");
+const path = require("path");
 
 module.exports = {
   i18n: {
