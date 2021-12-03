@@ -17,9 +17,6 @@ const Homepage = () => {
         <Header heading={t("h1")} title={t("title")} />
         <p>This page uses getServerSideProps</p>
         <div>
-          <Link href="/" locale={router.locale === "en" ? "de" : "en"}>
-            <button>{t("change-locale")}</button>
-          </Link>
           <Link href="/second-page">
             <button type="button">{t("to-second-page")}</button>
           </Link>
