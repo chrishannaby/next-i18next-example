@@ -9,9 +9,10 @@ exports.handler = async () => {
         encoding: "utf-8",
       }
     );
+    console.log(content);
     return {
       statusCode: 200,
-      body: JSON.stringify(content),
+      body: "hello",
     };
   } catch (e) {
     return {
