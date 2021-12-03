@@ -9,7 +9,7 @@ exports.handler = async () => {
     console.log(content);
     return {
       statusCode: 200,
-      body: "hello",
+      body: "file found",
     };
   } catch (e) {
     console.log(e);
