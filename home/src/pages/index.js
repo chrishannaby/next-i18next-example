@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -7,6 +6,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { ClientSide } from "../components/ClientSide";
+
+import i18nConfig from "../../next-i18next.config";
 
 const Homepage = () => {
   const { t } = useTranslation("common");
@@ -30,7 +31,7 @@ const Homepage = () => {
 
 export const getServerSideProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["common", "footer"])),
+    ...(await serverSideTranslations(locale, ["common", "footer"], i18nConfig)),
   },
 });
 
