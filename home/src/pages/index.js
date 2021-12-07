@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import i18nextConfig from "../../next-i18next.config";
 
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
@@ -29,7 +30,11 @@ const Homepage = () => {
 
 export const getServerSideProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["common", "footer"])),
+    ...(await serverSideTranslations(
+      locale,
+      ["common", "footer"],
+      i18nextConfig
+    )),
   },
 });
 

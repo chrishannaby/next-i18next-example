@@ -6,4 +6,4 @@ command = "yarn build"
 package = "@netlify/plugin-nextjs"
 
 [functions]
-  included_files = ["public/locales/en/*.json", "public/locales/de/*.json", "next-i18next.config.js"]
+  included_files = ["public/locales/en/*.json", "public/locales/de/*.json", "/var/task/next-i18next.config.js"]
