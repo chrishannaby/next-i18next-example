@@ -1,5 +1,6 @@
 {
   "greeting": "Hello",
+  "client": "This was fetched on the client",
   "h1": "A second page, to demonstrate routing",
   "back-to-home": "Back to home",
   "title": "Second page | next-i18next"
